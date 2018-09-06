@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>let</title>
+  </head>
+  <body>
+  <script>
+      var a = [];
+      for (var i = 0; i < 10; i++) {
+            a[i] = function () {
+              console.log(i);
+            };
+      }
+      a[6]();   //输出10
+      var a = [];
+      for (let i = 0; i < 10; i++) {
+            a[i] = function () {
+              console.log(i);
+            };
+      }
+      a[6]();   //输出6
+      // 原因是var 是全局变量，变量i是var声明的，for循环后，i都会指向10；
+      //let 则是在代码快中有效 
+  </script>
+  </body>
+</html>
