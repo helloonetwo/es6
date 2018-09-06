@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  </body>
+  <script>
+      // let [a=1]=[];
+      // console.log(a);   //1
+      // let [x,y='b']=['a'];
+      // console.log(x);  //a
+      // console.log(y);  //b
+      // //完全匹配时，默认值被替换掉
+      // let [x,y='b']=['a','c'];
+      // console.log(x);  //a
+      // console.log(y);  //c
+
+    let [x = 1, y = x] = [];     // x=1; y=1
+      console.log(x);  //1
+      console.log(y);  //1
+  </script>
+</html>
