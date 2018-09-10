@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //fetch:基于promise的请求方法，更方便，更加便捷
+    let url="http://jsonplaceholder.typicode.com/posts";
+    //console.log(fetch(url));
+    fetch(url).then(response=>response.json())
+              .then(data=>console.log(data))
+              .then(err=>console.log(err));
+</script>
+</html>
