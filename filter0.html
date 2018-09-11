@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //filter的使用场景：假如有一个对象数组A，获取数组中的指定类型的对象放到B数组中
+    //过滤前的数据
+    var students=[
+        {name:"vue",type:"lesson"},
+        {name:"react",type:"lesson"},
+        {name:"java",type:"lessonone"},
+        {name:"node",type:"lessonone"},
+    ];
+    // console.log(students);
+    //过滤后的数据
+    filterstudents=[];
+    //ES5
+    //先进行for循环遍历数组，再进行if 判断，如果数组中某个对象的类型符合要求，push 到一个新数组中
+    for(var i=0;i<students.length;i++) {
+        if(students[i].type==="lesson") {
+              filterstudents.push(students[i]);
+        }
+    }
+    //console.log(filterstudents);
+
+  // ES6
+  //使用filter 方法进行过滤,将数组的值放到迭代器函数中进行匹配，匹配成功，return 返回一个新的过滤后的数组
+  filter=students.filter(function(student){
+      return  student.type==="lesson"
+  });
+  console.log( filter);
+</script>
+</html>
