@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    users=[
+        {name:"vue"},
+        {name:"react"},
+        {name:"angular"}
+    ];
+    var user;
+    //es5
+    for(var i=0;i<users.length;i++) {
+          if(users[i].name==="vue") {
+              user=users[i];
+          }
+    }
+    console.log(user);
+    //es6
+   user= users.find(function(user) {
+          return  user.name==="angular"
+    });
+    console.log(user);
+</script>
+</html>
