@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var posts=[
+        {id:1,title:'vue'},
+        {id:2,title:'react'},
+        {id:3,title:'vuangular'}
+    ];
+    var  comment={
+        postId:1,
+        content:'hello  world'
+    };
+    function postForComment(posts,comment) {
+         return  posts.find(function(post){
+             return  post.id=comment.postId
+         })
+    }
+    console.log(postForComment(posts,comment))
+</script>
+</html>
