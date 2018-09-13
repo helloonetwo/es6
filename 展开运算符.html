@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //连接字符串
+    //ES5
+    var   acolor=["red","blue"];
+    var   bcolor=["black","yellow"];
+    var  acolor=acolor.concat(bcolor);  //(4) ["red", "blue", "black", "yellow"] 
+  
+    //ES6,连接字符串，先把他们放到一个数组中，再使用...
+    var full=(["hell",...acolor,...bcolor]);
+    console.log(full);  //(4) ["red", "blue", "black", "yellow"]
+</script>
+</html>
