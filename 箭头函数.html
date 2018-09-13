@@ -14,10 +14,12 @@
         members:["Herry","hrll"],
         teamName:"Es6",
         teamSummary:function() {
-            return this.members.map(function() {
-                return `${member}隶属于${this.teamName}`
+            var that=this;
+            return this.members.map(function(member) {
+                return `${member}隶属于${that.teamName}`
             })
         }
     }
+    console.log(team.teamSummary())
 </script>
 </html>
