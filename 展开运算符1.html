@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function  validaeShoppingList(...items) {
+    if(items.indexOf('apple') < 0) {
+        return  ["apple",...items];
+    }
+    return  items;
+
+}
+console.log(validaeShoppingList("banana","milk","eggs"))
+//(4) ["apple", "banana", "milk", "eggs"]
+</script>
+</html>
