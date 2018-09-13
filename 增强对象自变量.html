@@ -9,4 +9,19 @@
 <body>
     
 </body>
+<script>
+    //减少function 关键字
+    //可以直接写组件名字
+    function save(url,data) {
+        $.ajax({
+            url,
+            data,
+            method:"POST"
+        });
+    }
+    const  url="http://baidu.com";
+    const  data={
+        color:"red"
+    };
+</script>
 </html>
